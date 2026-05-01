@@ -1,0 +1,61 @@
+:root {
+  --text: #ffffff;
+  --text-h: #ffffff;
+  --bg: #000000;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+/* 🔥 ROOT CORRIGIDO */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: #000;
+  isolation: isolate; /* resolve bug mobile */
+}
+
+/* 🔥 TÍTULOS VISÍVEIS */
+h1, h2, h3 {
+  color: #fff;
+}
+
+/* 🔥 TEXTO NORMAL */
+p {
+  color: #ccc;
+}
+
+/* 🔥 BOTÕES BONITOS */
+button {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+/* 🔥 INPUT CORRIGIDO */
+input {
+  background: #1c1c1c;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 768px) {
+  h1 { font-size: 28px; }
+  h2 { font-size: 18px; }
+}
